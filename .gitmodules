@@ -1,0 +1,2 @@
+[submodule "vendor/dragooon/hawk"]
+	url = https://github.com/miloaisdino/hawk.git
