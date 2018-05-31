@@ -1,2 +1,3 @@
 [submodule "vendor/dragooon/hawk"]
-	url = https://github.com/miloaisdino/hawk
+	url = git://github.com/miloaisdino/hawk.git
+        path = vendor/dragooon/hawk
