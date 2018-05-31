@@ -1,0 +1,47 @@
+<?php
+//$this->load->view('autorefresh');
+?>
+
+<?php if (count($model) > 0): ?>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <table class="table table-striped" id="arrival">
+        <thead>
+        <tr>
+            <th><?php echo implode('</th><th>', array_keys(current($model))); ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($model as $row): ; ?>
+            <tr>
+                <td><?php echo implode('</td><td>', $row); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+    <!--script>
+
+        var index = 1;
+        function timer(){
+            document.getElementById("seconds").innerHTML = "Updated " + index + " secs ago";
+            index  = index + 1;
+        }
+        var interval;
+        interval = setInterval(timer, 1000);
+
+    </script-->
+    <script>
+        $reload = function () {
+            document.getElementById("status").innerHTML = '<!--i class="fa fa-refresh fa-spin" style="width: 20px; height: 20px;"></i-->' +
+                '<p>.</p>';
+            $( "#container" ).load( "<?php echo $_SERVER['REQUEST_URI'].''; ?>" );
+        }
+        setTimeout($reload, 1 * 1000);
+    </script>
+
+    <p class="nobp" id="status"></p>
+
+<?php endif; ?>

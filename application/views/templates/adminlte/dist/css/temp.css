@@ -1,0 +1,21 @@
+
+.ns-mrt {
+    background: #d62821
+}
+.cc-mrt {
+    background: #f2ad27
+}
+.ew-mrt {
+    background: #189e4a
+}
+.dt-mrt {
+    background: #0354a6
+}
+.ne-mrt {
+    background: #844184
+}
+.line-mrt {
+    font-size: 12px;
+    width: 30px;
+    text-align: center
+}

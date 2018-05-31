@@ -1,0 +1,45 @@
+.overflow_visible {
+    overflow: visible;
+}
+
+.nobp {
+        margin: 0;
+        padding: 0;
+}
+.ns-mrt {
+    background: #d62821
+}
+.cc-mrt {
+    background: #f2ad27
+}
+.ew-mrt {
+    background: #189e4a
+}
+.dt-mrt {
+    background: #0354a6
+}
+.ne-mrt {
+    background: #844184
+}
+.unknown-mrt {
+    background: #212121
+}
+.line-mrt {
+    font-size: 90%;
+    width: 30px;
+    text-align: center
+}
+.white, #arrival span {
+    padding: 0 5px;
+    color: #fff;
+    font-size: 16px;
+   /* border-radius: 4px;*/
+    font-weight: 400;
+}
+
+.mycontainer {
+    font-size: 16px;
+}
+.nowrap {
+    white-space:nowrap;
+}

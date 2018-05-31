@@ -1,0 +1,27 @@
+.overflow_visible {
+    overflow: visible;
+}
+
+.nobp {
+    margin: 0;
+    padding: 0;
+}
+
+.line-mrt {
+    font-size: 90%;
+    width: 30px;
+    text-align: center
+}
+.white, #arrival span {
+    padding: 0 5px;
+    font-size: 16px;
+    /* border-radius: 4px;*/
+    font-weight: 400;
+}
+
+.mycontainer {
+    font-size: 16px;
+}
+.nowrap {
+    white-space:nowrap;
+}
